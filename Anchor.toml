@@ -1,0 +1,18 @@
+[toolchain]
+
+[features]
+seeds = false
+skip-lint = false
+
+[programs.localnet]
+counter_program = "124AXhtkntDHNLmJ1vVrhp26kJNABXFF5PguRDg6eWtz"
+
+[registry]
+url = "https://api.devnet.solana.com"
+
+[provider]
+cluster = "Devnet"
+wallet = "~/.config/solana/id.json"
+
+[scripts]
+test = "yarn run ts-mocha -p ./tsconfig.json -t 1000000 tests/**/*.ts"
